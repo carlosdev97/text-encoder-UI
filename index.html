@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Text Encoder</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/external-basicons-line-edtgraphics/50/external-Binary-coding-basicons-line-edtgraphics.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        width="50"
+        height="50"
+        src="https://img.icons8.com/external-basicons-line-edtgraphics/50/external-Binary-coding-basicons-line-edtgraphics.png"
+        alt="external-Binary-coding-basicons-line-edtgraphics"
+      />
+    </header>
+    <main class="main">
+      <section class="input__container">
+        <textarea
+          class="input"
+          cols="30"
+          rows="5"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div class="input__info">
+          <img
+            src="resources/informacion.png"
+            alt="icono que indica informacion"
+          />
+          <h6>Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="input__buttons">
+          <button class="btn-encriptar button" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+          <button class="btn-desencriptar button" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="output__container">
+        <textarea class="output" cols="30" rows="5" readonly></textarea>
+        <button class="btn-copiar button" onclick="btnCopiar()">Copiar</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
